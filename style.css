@@ -1,0 +1,15 @@
+img{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.i{
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}

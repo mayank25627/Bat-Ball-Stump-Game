@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="position: relative;right: 30px;">
+        Bat Ball Stump Game
+    </h1>
+
+    <button class="i"  onclick="
+    let computerChoise = generateComputerChooise();
+    let result = getResult('Bat',computerChoise);
+    printResult('Bat', computerChoise, result);
+    ">
+    <img src="bat.png" alt="bat-image" class="bat-i">
+    </button>
+
+    <button class="i"  onclick="
+    computerChoise = generateComputerChooise();
+    result = getResult('Ball',computerChoise);
+    printResult('Ball', computerChoise, result);
+    "><img src="ball.jpg" alt="ball-image" class="bat-i">
+    </button>
+
+    <button class="i" onclick="
+    computerChoise = generateComputerChooise();
+    result = getResult('Stump',computerChoise);
+    printResult('Stump', computerChoise, result);
+    ">
+    <img src="stump.jpg" alt="stupm-image" class="bat-i">
+    </button>
+
+
+    <button style="position: relative; top: 35px; right: 225px;" onclick="resetResult();">
+        Reset
+    </button>
+
+    <br>
+    <br>
+    <br>
+
+   <h2 id="user-b"></h2>
+   <h2 id="computer-b"></h2>
+   <h2 id="result"></h2>
+   <h2 id="score"></h2>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
